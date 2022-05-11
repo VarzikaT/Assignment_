@@ -1,0 +1,24 @@
+{
+  "name": "assignment_",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VarzikaT/Assignment_.git"
+  },
+  "author": "Varzika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VarzikaT/Assignment_/issues"
+  },
+  "homepage": "https://github.com/VarzikaT/Assignment_#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
