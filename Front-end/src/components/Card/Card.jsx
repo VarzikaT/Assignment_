@@ -3,23 +3,25 @@ import "./Card.css"
 
 function Card({name , author , desc}) {
   return (
-    <div>
-    <div class = "card-container">
-      <div class = "card">
-        <div class = "image">
-          <img href = "#" src ="https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"/>
+        <div class="card-category-1">
+          <div class="basic-card basic-card-aqua">
+              <div class="card-content">
+                    <span class="card-title">{name}</span>
+                    <p class="card-text">
+                        {desc}
+                        Lorem ipsum dolor sit, quis nemo quia quo atque a, doloribus temporibus error quisquam cupiditate ullam ut.
+
+                    </p>
+
+                     <p>{author}</p>   
+                </div>
+
+              <div class="card-link">                 
+                <button className='action-btn'>Edit</button>
+                <button className='action-btn'>Delete</button>
+              </div>
+          </div>
         </div>
-        <div class = "content">
-          <h3>{name}</h3>
-          <p>
-            {desc}
-          </p>
-          {author}
-        </div>
-      </div>    
-    </div>
-    
-  </div>
   )
 }
 

@@ -1,19 +1,21 @@
 import React from 'react'
+import './Addbook.css'
 
 function Addbook() {
+
+  const submithandler = () => {
+    window.location.href = "/books"
+  }
+
   return (
     <div>
-         <div class="wrapper">
-    <form class="form"/>
-      <div class="pageTitle title">Sign Up </div>
-      <div class="secondaryTitle title">Please fill this form to sign up.</div>
-      <input type="text" class="name formEntry" placeholder="Name" />
-      <input type="text" class="email formEntry" placeholder="Email"/>
-      <textarea class="message formEntry" placeholder="Message"></textarea>
-      <input type="checkbox" class="termsConditions" value="Term"/>
-      <label style="color: grey" for="terms"> I Accept the <span style="color: #0e3721">Terms of Use</span> & <span style="color: #0e3721">
-    Privacy Policy</span>.</label><br/>
-      <button class="submit formEntry" onclick="thanks()">Submit</button>
+      <div class="wrapper">
+      <div class="pageTitle title">Add Books </div>
+      <div class="secondaryTitle title">Add the description of the books to be added</div>
+      <input type="text" class="name formEntry" placeholder="Name of the Book" />
+      <input type="text" class="email formEntry" placeholder="Name of the Author"/>
+      <textarea class="message formEntry" placeholder="Price of the Book"></textarea>
+      <button class="submit formEntry" onClick={submithandler}>Submit</button>
   </div>
     </div>
   )
